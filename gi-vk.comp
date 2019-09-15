@@ -156,6 +156,8 @@ vec3 generateSampleDirOverHemisphere(float r1, float r2)
     return vec3(sint * cos(phi), r1, sint * sin(phi));
 }
 
+// Gold Noise ©2015 dcerisano@standard3d.com
+// https://stackoverflow.com/questions/4200224/random-noise-functions-for-glsl
 float rand(vec2 uv, in float seed)
 {
     float PHI = 1.61803398874989484820459 * 00000.1; // Golden Ratio   
