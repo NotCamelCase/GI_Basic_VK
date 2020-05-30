@@ -235,7 +235,7 @@ bool InitVulkanInstance(Args* pArgs, ComputeContext* pContext)
     appInfo.pEngineName = "GI_Basic";
     appInfo.pApplicationName = "GI_Basic";
     appInfo.engineVersion = VK_MAKE_VERSION(1, 0, 0);
-    appInfo.apiVersion = VK_VERSION_1_1;
+    appInfo.apiVersion = VK_API_VERSION_1_2;
 
 #ifdef _DEBUG
     VkDebugUtilsMessengerCreateInfoEXT debugInfo = { VK_STRUCTURE_TYPE_DEBUG_UTILS_MESSENGER_CREATE_INFO_EXT };
